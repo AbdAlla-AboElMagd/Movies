@@ -13,6 +13,7 @@ import GetOneMovie from "./Pages/GetOneMovie";
 import GetSearch from "./Pages/GetSearch";
 import { useState } from "react";
 import Error404 from "./Pages/Error404";
+import GetAllFavoriteMovies from "./Pages/GetAllFavoriteMovies";
 
 function App() {
   return (
@@ -32,6 +33,7 @@ function App() {
               exact
             />
             <Route path="/search" component={GetSearch} exact />
+            <Route path="/fav" component={GetAllFavoriteMovies} />
             <Route path="*" component={Error404} exact />
           </Switch>
         </BrowserRouter>

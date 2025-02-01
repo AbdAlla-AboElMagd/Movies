@@ -124,6 +124,7 @@ function GetAllMovies(props) {
               key={movie.id}
               title={movie.title}
               poster_path={poster}
+              id={movie.id}
               path={`/moviedetail/${movie.id}`}
             ></MyCard>
           );

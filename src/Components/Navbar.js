@@ -3,8 +3,12 @@ import { useHistory } from "react-router-dom/cjs/react-router-dom.min";
 import { useState } from "react";
 import InputText from "./InputText";
 import InputSearch from "./InputSearch";
+import { useSelector } from "react-redux";
+import { FaHeart } from "react-icons/fa";
+
 function Navbar() {
   const history = useHistory();
+  let total_fav = useSelector((state) => state.favMovie.totalFav);
   const [searchText, setSearchText] = useState("");
 
   const updateTextValue = (name, searchbarText) => {
@@ -45,9 +49,20 @@ function Navbar() {
                   Search
                 </Link>
               </li>
+              <li className="nav-item">
+                <Link className="nav-link" aria-current="page" to="/fav">
+                  Favorites
+                </Link>
+              </li>
             </ul>
 
             <div className="d-flex justify-content-center align-items-center">
+              <div className="me-2 d-flex flex-row justify-content-center align-items-center">
+                <Link className="nav-link" aria-current="page" to="/fav">
+                  <FaHeart className="mb-2" color="red" size="2rem" />{" "}
+                  <span className="fs-2"> {total_fav} </span>
+                </Link>
+              </div>
               <div className="me-2">
                 <InputSearch
                   Name="Search"

@@ -25,6 +25,7 @@ function GetOneMovie() {
   return (
     <>
       <MyCard
+        isOne={true}
         backdrop_path={bdpath}
         title={movie.title}
         poster_path={poster}
