@@ -24,7 +24,7 @@ function InputPassword(props) {
         ...passInfo,
         pass: e.target.value,
       });
-      console.log(e.target.value.length);
+      // console.log(e.target.value.length);
       if (props.checkReg.test(e.target.value)) {
         if (passInfo.confirm == null || !props.confirmation) {
           setErrors({
@@ -133,7 +133,7 @@ function InputPassword(props) {
   };
 
   const togglePassControl = (control) => {
-    console.log(control);
+    // console.log(control);
     if (control == "p") {
       if (PassControle.showPass) {
         setPassControle({

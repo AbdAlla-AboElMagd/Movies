@@ -12,6 +12,7 @@ import GetAllMovies from "./Pages/GetAllMovies";
 import GetOneMovie from "./Pages/GetOneMovie";
 import GetSearch from "./Pages/GetSearch";
 import { useState } from "react";
+import Error404 from "./Pages/Error404";
 
 function App() {
   return (
@@ -21,6 +22,7 @@ function App() {
           <Navbar></Navbar>
           <Switch>
             <Route path="/" component={Home} exact />
+            <Route path="/Movies" component={Home} exact />
             <Route path="/login" component={LoginFormComp} exact />
             <Route path="/register" component={RegisterForm} exact />
             <Route path="/allmovies" component={GetAllMovies} exact />
@@ -30,6 +32,7 @@ function App() {
               exact
             />
             <Route path="/search" component={GetSearch} exact />
+            <Route path="*" component={Error404} exact />
           </Switch>
         </BrowserRouter>
       </div>

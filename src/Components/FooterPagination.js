@@ -28,19 +28,19 @@ function FooterPagination(props) {
       max: maxPage,
       min: minPage,
     });
-    console.log("------------------------------------------------------------");
-    console.log(minPage);
-    console.log(maxPage);
-    console.log(currentPage);
-    console.log("------------------------------------------------------------");
-    console.log(props.min);
-    console.log(props.max);
-    console.log(currentPage);
-    console.log("------------------------------------------------------------");
-    console.log(pageInfo.min);
-    console.log(pageInfo.max);
-    console.log(pageInfo.page);
-    console.log("------------------------------------------------------------");
+    // console.log("------------------------------------------------------------");
+    // console.log(minPage);
+    // console.log(maxPage);
+    // console.log(currentPage);
+    // console.log("------------------------------------------------------------");
+    // console.log(props.min);
+    // console.log(props.max);
+    // console.log(currentPage);
+    // console.log("------------------------------------------------------------");
+    // console.log(pageInfo.min);
+    // console.log(pageInfo.max);
+    // console.log(pageInfo.page);
+    // console.log("------------------------------------------------------------");
 
     // let locationSearch = new URLSearchParams(location.search);
     // let page = locationSearch.get("page");

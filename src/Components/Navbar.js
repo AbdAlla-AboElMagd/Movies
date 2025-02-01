@@ -19,7 +19,7 @@ function Navbar() {
     <>
       <nav className="navbar navbar-expand-lg navbar-dark bg-black sticky-top">
         <div className="container-fluid">
-          <Link class="nav-link active fw-bold" aria-current="page" to="/">
+          <Link className="nav-link active fw-bold" aria-current="page" to="/">
             Moives Home
           </Link>
           <button
@@ -36,12 +36,12 @@ function Navbar() {
           <div className="collapse navbar-collapse" id="navbarSupportedContent">
             <ul className="navbar-nav me-auto mb-2 mb-lg-0">
               <li className="nav-item">
-                <Link class="nav-link" aria-current="page" to="/allmovies">
+                <Link className="nav-link" aria-current="page" to="/allmovies">
                   All Movies
                 </Link>
               </li>
               <li className="nav-item">
-                <Link class="nav-link" aria-current="page" to="/search">
+                <Link className="nav-link" aria-current="page" to="/search">
                   Search
                 </Link>
               </li>

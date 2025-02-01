@@ -56,6 +56,7 @@ function InputText(props) {
       <input
         type="text"
         name={props.Name}
+        id={props.Name}
         className={`form-control ${
           errors.errText == null
             ? "form-control"

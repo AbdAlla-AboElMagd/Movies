@@ -121,6 +121,7 @@ function GetAllMovies(props) {
           let poster = `https://image.tmdb.org/t/p/w500/${movie.poster_path}`;
           return (
             <MyCard
+              key={movie.id}
               title={movie.title}
               poster_path={poster}
               path={`/moviedetail/${movie.id}`}
