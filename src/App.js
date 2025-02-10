@@ -24,16 +24,33 @@ function App() {
           <Switch>
             <Route path="/" component={Home} exact />
             <Route path="/Movies" component={Home} exact />
+
             <Route path="/login" component={LoginFormComp} exact />
+            <Route path="/Movies/login" component={LoginFormComp} exact />
+
             <Route path="/register" component={RegisterForm} exact />
+            <Route path="/Movies/register" component={RegisterForm} exact />
+
             <Route path="/allmovies" component={GetAllMovies} exact />
+            <Route path="/Movies/allmovies" component={GetAllMovies} exact />
+
             <Route
               path="/moviedetail/:movie_id"
               component={GetOneMovie}
               exact
             />
+            <Route
+              path="/Movies/moviedetail/:movie_id"
+              component={GetOneMovie}
+              exact
+            />
+
             <Route path="/search" component={GetSearch} exact />
+            <Route path="/Movies/search" component={GetSearch} exact />
+
             <Route path="/fav" component={GetAllFavoriteMovies} />
+            <Route path="/Movies/fav" component={GetAllFavoriteMovies} />
+
             <Route path="*" component={Error404} exact />
           </Switch>
         </BrowserRouter>
