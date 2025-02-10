@@ -23,19 +23,29 @@ function GetOneMovie() {
   let poster = `https://image.tmdb.org/t/p/w500/${movie.poster_path}`;
   let bdpath = `https://image.tmdb.org/t/p/w500/${movie.backdrop_path}`;
   return (
-    <>
-      <MyCard
-        isOne={true}
-        backdrop_path={bdpath}
-        title={movie.title}
-        poster_path={poster}
-        overview={movie.overview}
-        lang={movie.original_language}
-        popularity={movie.popularity}
-        vote={movie.vote_average}
-        release_date={movie.release_date}
-      ></MyCard>
-    </>
+    <div
+      className="W-100 d-flex justify-content-center"
+      style={{
+        backgroundImage: `url(${bdpath})`,
+        backgroundRepeat: "no-repeat",
+        backgroundSize: "cover",
+        backgroundPosition: "center",
+      }}
+    >
+      <div className="col-lg-8 col-md-10 col-sm-12 col-12">
+        <MyCard
+          isOne={true}
+          backdrop_path={bdpath}
+          title={movie.title}
+          poster_path={poster}
+          overview={movie.overview}
+          lang={movie.original_language}
+          popularity={movie.popularity}
+          vote={movie.vote_average}
+          release_date={movie.release_date}
+        ></MyCard>
+      </div>
+    </div>
   );
 }
 

@@ -37,8 +37,11 @@ function MyCard(props) {
     // }
     >
       <div
-        className="card"
-        style={{ width: props.isOne ? "100%" : "25rem", minHeight: "750px" }}
+        className="card rounded-4 p-2 shadow"
+        style={{
+          width: props.isOne ? "100%" : "25rem",
+          minHeight: "750px",
+        }}
       >
         {props.poster_path && (
           <img
@@ -93,6 +96,21 @@ function MyCard(props) {
               : "Remove From Favorites"}
           </button>
         </div> */}
+
+        {/* <div
+          style={{
+            position: "absolute",
+            backdropFilter: "blur(10px)",
+            padding: "20px",
+            borderRadius: "10px",
+            boxShadow: "0 4px 6px rgba(0, 0, 0, 0.1)",
+            width: "300px",
+            height: "200px",
+          }}
+        >
+          Details
+        </div> */}
+
         <div>
           {props.path && (
             <Link

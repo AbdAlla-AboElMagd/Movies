@@ -6,7 +6,7 @@ function GetAllFavoriteMovies(props) {
   const dispatch = useDispatch();
   return (
     <div className="m-2">
-      <p className="fs-1 fw-bold">Movies</p>
+      <p className="fs-1 fw-bold">Favorite Movies</p>
       <p>Total Results: {totalFav}</p>
       <div className="d-flex flex-row flex-wrap gap-4 justify-content-evenly align-items-center">
         {Object.entries(favMovies).map(([id, movie]) => {
